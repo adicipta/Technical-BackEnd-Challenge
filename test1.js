@@ -63,7 +63,11 @@ const sessions = [
 ];
 
 function result(sessions) {
-  // your code here
+   var isArray = sessions instanceof Array;
+  for (i in sessions){
+    if (sessions[i]==='sessions_id') isArray ? obj.splice(i,1) : push.sessions[i];
+  }
+  return JSON.stringify(sessions, null, 2)
 }
 
 console.log(result(sessions));
