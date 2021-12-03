@@ -63,7 +63,7 @@ const sessions = [
 ];
 
 function result(sessions) {
-   var isArray = sessions instanceof Array;
+  var isArray = sessions instanceof Array;
   for (i in sessions){
     if (sessions[i]==='sessions_id') isArray ? obj.splice(i,1) : push.sessions[i];
   }
